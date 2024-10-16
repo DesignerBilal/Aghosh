@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/contact.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/logo .png" type="image/x-icon">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Nav Bar -->
+    <div class="nav-bar">
+      <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="index.html">
+              <img src="assets/img/logo .png" alt="">
+              <span href="index.html">Aghosh <span>Orphan Care Homes</span></span>
+            </a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">Aghosh <span>Orphan Care Homes</span></span>
+              <i class='bx bx-x'></i>
+            </div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="causes/causes.html">Causes</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="causes/school.html">School</a></li>
+                  <li><a href="causes/food.html">Food</a></li>
+                  <li><a href="causes/health.html">Health</a></li>
+                  <li><a href="causes/home.html">Home</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Get involved</a>
+                <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                <ul class="js-sub-menu sub-menu">
+                  <li><a href="involved/fundraise.html">Fundraise</a></li>
+                  <li><a href="involved/volunteer.html">Volunteer</a></li>
+                  <li><a href="involved/updates.html">Updates</a></li>
+                  <li><a href="causes/events.html">Events</a></li>
+                </ul>
+              </li>
+              <li><a href="about-us.html">ABOUT US</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+              <li>
+                <a href="more/more.html">More</a>
+                <i class='bx bxs-chevron-down js_arrow arrow '></i>
+                <ul class="jsSub-menu sub-menu">
+                  <li><a href="more/videos.html">Videos</a></li>
+                  <li><a href="more/gallery.html">Gallery</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Nav Ended -->
+
+  </header>
+  <!-- Header Ended -->
+  <!-- Form -->
+  <form id="contactForm">
+    <div class="wrapper centered">
+      <article class="letter">
+        <div class="side">
+          <h1>Contact us</h1>
+          <p>
+            <textarea placeholder="Your message" required></textarea>
+          </p>
+          <img id="logo-img" src="assets/img/logo .png" alt="">
+        </div>
+        <div class="side">
+          <p>
+            <input type="text" placeholder="Your name" required>
+          </p>
+          <p>
+            <input type="email" placeholder="Your email" required>
+          </p>
+          <p>
+            <input type="submit" id="sendLetter" value="Send">
+          </p>
+        </div>
+      </article>
+      <div class="envelope front"></div>
+      <div class="envelope back"></div>
+    </div>
+  </form>
+  <p class="result-message centered">Thank you for your message</p>
+
+
+
+
+  <script src="scripts/contact.js"></script>
+  <!-- Email JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "RgwFgK7J3R9H0kNWb",
+      });
+    })();
+  </script>
+</body>
+
+</html>
